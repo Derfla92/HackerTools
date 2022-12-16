@@ -13,7 +13,6 @@ const sendHttps = (message,options,callBack) => {
         });
     
         response.on('end', function () {
-            console.log(str);
             callBack(str)
         });
     });
